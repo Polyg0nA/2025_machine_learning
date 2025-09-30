@@ -41,24 +41,24 @@ Specification of Random forest (both classification and regression):
 ## Results
 ### **1. Classification model**
 
-The model achieved an overall accuracy of 99.3%. For the minority class (valid data, Label 1), it achieved a Precision of 0.99 and a Recall of 0.98, indicating it is both highly reliable and rarely misses valid data points.
+The model achieved an overall accuracy of 98.7%. For the minority class (valid data, Label 1), it achieved a Precision of 0.99 and a Recall of 0.98, indicating it is both highly reliable and rarely misses valid data points.
 
-![alt text](image.png)
+![alt text](./fig/image.png)
 
 The geospatial distribution show that the prediction errors are minimal and primarily occur at the edges of this boundary. (The ratio of vertical and horizontal grid is set to $\frac{1}{\cos(23.5^\circ)}$, since the higher the lattitude, the narrower the longitude)
 
-![alt text](image-1.png)
+![alt text](./fig/image-1.png)
 
 
 
 ### **2. Regression model**
-Root Mean Squared Error (RMSE): 0.473 °C, the average error of the model's temperature predictions.
+Root Mean Squared Error (RMSE): 2.3505 °C, the average error of the model's temperature predictions.
 
-R-squared (R²): 0.981.
+R-squared (R²): 0.8499.
 
 The following plot shows data points tightly clustered around the $y=x$ line, confirming the model's high accuracy.
-![alt text](image-2.png)
+![alt text](./fig/image-2.png)
 
 The geospatial error map reveals a major problem: prediction errors are significantly larger in the **Central Mountain Range** of Taiwan. This is because the model, using only 2D coordinates, is unaware of **altitude**, which is a critical factor influencing temperature.
 
-![alt text](image-3.png)
+![alt text](./fig/image-3.png)

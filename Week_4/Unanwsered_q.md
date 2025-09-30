@@ -1,0 +1,1 @@
+In what scenario does the Gradient descent method or the Newton's method perform better than the other one? What's the differences?
