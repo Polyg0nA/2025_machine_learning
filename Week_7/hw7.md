@@ -1,4 +1,4 @@
-# HW6
+# HW7
 112652011 廖晨鈞
 > Question: Explain the concept of score matching and describe how it is used in score-based (diffusion) generative models.
 
